@@ -21,7 +21,7 @@ let email=null;
 let nothing=undefined;
 let idSymbol=Symbol("id");
 let bigNumber=100n;
-console.table([name,name1,number,number1,isLoggedIn,email,nothing,idSymbol,bigNumber]);
+//console.table([name,name1,number,number1,isLoggedIn,email,nothing,idSymbol,bigNumber]);
 /* Non-primitive data types
 1. object
 2. array
@@ -47,20 +47,41 @@ const obj={
         pincode:12345
     }
 }
-console.table([obj]);
+// console.table([obj]);
 //function
 function sum(a,b){
     return a*b
 }
-console.log(sum(2,3));
+// console.log(sum(2,3));
 
-console.log(typeof arr,"arr");
-console.log(typeof(array1),"array");
-console.log(typeof name,"name");
-console.log(typeof(name1),"name1");
-console.log(typeof number1,"number1");
-console.log(typeof(isLoggedIn),"isLoggedIn");
-console.log(typeof(email)," email");
-console.log(typeof(nothing),"nothing");
-console.log(typeof(idSymbol),"idSymbol");
-console.log(typeof(bigNumber),"bigNumber");
+// console.log(typeof arr,"arr");
+// console.log(typeof(array1),"array");
+// console.log(typeof name,"name");
+// console.log(typeof(name1),"name1");
+// console.log(typeof number1,"number1");
+// console.log(typeof(isLoggedIn),"isLoggedIn");
+// console.log(typeof(email)," email");
+// console.log(typeof(nothing),"nothing");
+// console.log(typeof(idSymbol),"idSymbol");
+// console.log(typeof(bigNumber),"bigNumber");
+
+
+
+/* stack and heap memory
+1. stack memory:primitive
+2. heap memory:non primitive
+*/
+let myName="archana ashok mhake";
+let mylatestName=myName;
+mylatestName="archana shrikant chobhe";
+console.log(mylatestName);
+console.log(myName);
+
+let userOne={
+    email:"archana@gmail.com",
+    upi:"archana@upi"
+}
+let userTwo=userOne;
+userTwo.email="shrikant@gmail.com";
+console.log(userOne.email);
+console.log(userTwo.email);
